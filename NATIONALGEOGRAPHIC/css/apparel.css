@@ -1,0 +1,554 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  background-color: #000;
+  color: #fff;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* 헤더 */
+
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 30;
+}
+
+.header-wrap {
+  width: 1200px;
+  height: 100%;
+}
+
+.main-gnb {
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  font-weight: 200;
+  display: flex;
+}
+
+.main-gnb li {
+  margin-left: 20px;
+}
+
+.main-gnb li a,
+.main-gnb li i {
+  transition: all 0.3s;
+}
+
+.main-gnb li a:hover {
+  color: #FFDC00;
+}
+
+.main-gnb li i:hover {
+  color: #FFDC00;
+}
+
+.main-gnb li:nth-child(4) a {
+  color: #FFDC00;
+  font-weight: 400;
+}
+
+.main-gnb li:last-child i {
+  cursor: pointer;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: 80px;
+  background-image: url(../IMG/NATGEO\ KOREA.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sub-gnb-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 99999;
+}
+
+.sub-gnb {
+  width: 500px;
+  height: 100vh;
+  background-color: #262626;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.sub-gnb ul {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.sub-gnb li {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.sub-gnb li a,
+.sub-gnb .close {
+  transition: all 0.3s;
+}
+
+.sub-gnb li:hover a {
+  color: #FFDC00;
+}
+
+.sub-gnb .close {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  cursor: pointer;
+  background-image: url(../IMG/sub_gnb_close.png);
+}
+
+.sub-gnb .close:hover {
+  background-image: url(../IMG/sub_gnb_close_hover.png);
+}
+
+
+/* 컨텐츠 */
+.contents {
+  width: 1200px;
+  padding-top: 120px;
+}
+
+.plan {
+  margin-bottom: 100px;
+}
+
+.con-title {
+  font-size: 30px;
+  font-weight: bold;
+  border-left: 3px solid #FFDC00;
+  padding-left: 20px;
+}
+
+.box_3 {
+  width: 1200px;
+  display: flex;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 0 30px;
+}
+
+.box_3 .box {
+  margin: 0;
+  width: 380px;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background-color: #fff;
+  cursor: pointer;
+  /* transition: all 0.3s; */
+  top: 0;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+
+
+.box_3 .box:hover .box-txt {
+  color: #FFDC00;
+}
+
+.box-bg {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100));
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+}
+
+.box-txt {
+  width: 100%;
+  height: 140px;
+  padding: 30px 20px 20px 20px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.box-txt p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box-txt p:last-child {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
+.swiper-slide {
+  margin: 0;
+  width: 278px;
+  height: 308px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background-color: #fff;
+  cursor: pointer;
+  /* transition: all 0.3s; */
+  top: 0;
+  margin-bottom: 50px;
+}
+
+.box-txt2 {
+  width: 100%;
+  height: 140px;
+  padding: 50px 20px 20px 20px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.swiper-slide:hover .box-txt2 {
+  color: #FFDC00;
+}
+
+.box-txt2 p {
+  font-weight: bold;
+}
+
+.box-txt2 p:last-child {
+  font-weight: 400;
+}
+
+.box-txt2 span {
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+
+.box1-1 {
+  background-image: url(../IMG/apparel1-1.jpg);
+}
+.box2-1 {
+  background-image: url(../IMG/apparel2-1.jpg);
+}
+.box3-1 {
+  background-image: url(../IMG/apparel3-1.jpg);
+}
+.box4-1 {
+  background-image: url(../IMG/apparel4-1.jpg);
+}
+.box5-1 {
+  background-image: url(../IMG/apparel5-1.jpg);
+}
+.box6-1 {
+  background-image: url(../IMG/apparel6-1.jpg);
+}
+
+
+
+.box1 {
+  background-image: url(../IMG/apparel1.jpg);
+}
+.box2 {
+  background-image: url(../IMG/apparel2.jpg);
+}
+.box3 {
+  background-image: url(../IMG/apparel3.jpg);
+}
+.box4 {
+  background-image: url(../IMG/apparel4.jpg);
+}
+.box5 {
+  background-image: url(../IMG/apparel5.jpg);
+}
+.box6 {
+  background-image: url(../IMG/apparel6.jpg);
+}
+.box7 {
+  background-image: url(../IMG/apparel7.jpg);
+}
+.box8 {
+  background-image: url(../IMG/apparel8.jpg);
+}
+.box9 {
+  background-image: url(../IMG/apparel9.jpg);
+}
+.box10 {
+  background-image: url(../IMG/apparel10.jpg);
+}
+.box11 {
+  background-image: url(../IMG/apparel11.jpg);
+}
+.box12 {
+  background-image: url(../IMG/apparel12.jpg);
+}
+.box13 {
+  background-image: url(../IMG/apparel13.jpg);
+}
+.box14 {
+  background-image: url(../IMG/apparel14.jpg);
+}
+.box15 {
+  background-image: url(../IMG/apparel15.jpg);
+}
+.box16 {
+  background-image: url(../IMG/apparel16.jpg);
+}
+.box17 {
+  background-image: url(../IMG/apparel17.jpg);
+}
+.box18 {
+  background-image: url(../IMG/apparel18.jpg);
+}
+
+.event-wrap {
+  margin: 50px 0;
+  margin-bottom: 100px;
+}
+
+.event-left {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background-image: url(../IMG/photoreview2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.event-left:hover {
+  top: -10px;
+}
+
+.event-right {
+  display: flex;
+  justify-content: space-between;
+  width: 670px;
+  height: 500px;
+  flex-wrap: wrap;
+}
+
+.event-con {
+  width: 320px;
+  height: 235px;
+  background-color: #fff;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.3s;
+}
+
+.event-con:hover {
+  top: -10px;
+}
+
+.event-con .box-bg {
+  height: 150px;
+}
+
+
+
+.con1 {
+  background-image: url(../IMG/COUPON.png);
+}
+.con2 {
+  background-image: url(../IMG/event.png);
+}
+.con3 {
+  background-image: url(../IMG/event2.png);
+}
+.con4 {
+  background-image: url(../IMG/event3.png);
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #262626;
+}
+
+.footer-con {
+  width: 1200px;
+  height: 100%;
+}
+
+.bt-menu {
+  padding: 30px 0;
+}
+
+.bt-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bt-left li {
+  padding: 0 20px;
+  border-right: 3px solid #FFDC00;
+}
+
+.bt-left li a {
+  transition: all 0.3s;
+}
+
+.bt-left li a:hover {
+  color: #FFDC00;
+}
+
+.bt-left li:first-child {
+  padding-left: 0;
+}
+
+.bt-left li:last-child {
+  border-right: none;
+}
+
+.bt-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.insta {
+  background-image: url(../IMG/icon_insta.png);
+}
+
+.you {
+  background-image: url(../IMG/icon_ytube.png);
+}
+
+.face {
+  background-image: url(../IMG/icon_face.png);
+}
+
+.contect>p {
+  margin-bottom: 30px;
+}
+
+.number {
+  width: 1000px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.number li {
+  margin: 0;
+}
+
+.copy {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* 탑버튼 */
+.top-btn {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50px;
+  height: 50px;
+  right: 200px;
+  bottom: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+.top-btn i {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}

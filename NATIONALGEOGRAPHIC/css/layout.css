@@ -1,0 +1,547 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  background-color: #000;
+  color: #fff;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* 헤더 */
+
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 30;
+}
+
+.header-wrap {
+  width: 1200px;
+  height: 100%;
+}
+
+.main-gnb {
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  font-weight: 200;
+  display: flex;
+}
+
+.main-gnb li {
+  margin-left: 20px;
+}
+
+.main-gnb li a,
+.main-gnb li i {
+  transition: all 0.3s;
+}
+
+.main-gnb li a:hover {
+  color: #FFDC00;
+}
+
+.main-gnb li i:hover {
+  color: #FFDC00;
+}
+
+.main-gnb li:first-child a {
+  color: #FFDC00;
+  font-weight: 400;
+}
+
+.main-gnb li:last-child i {
+  cursor: pointer;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: 80px;
+  background-image: url(../IMG/NATGEO\ KOREA.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sub-gnb-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 99999;
+}
+
+.sub-gnb {
+  width: 500px;
+  height: 100vh;
+  background-color: #262626;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.sub-gnb ul {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.sub-gnb li {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.sub-gnb li a,
+.sub-gnb .close {
+  transition: all 0.3s;
+}
+
+.sub-gnb li:hover a {
+  color: #FFDC00;
+}
+
+.sub-gnb .close {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  cursor: pointer;
+  background-image: url(../IMG/sub_gnb_close.png);
+}
+
+.sub-gnb .close:hover {
+  background-image: url(../IMG/sub_gnb_close_hover.png);
+}
+
+
+
+/* 컨텐츠 */
+.contents {
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 750px;
+  margin-bottom: 100px;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.slide1 {
+  background-image: url(../IMG/slide1.jpg);
+}
+
+.slide3 {
+  background-image: url(../IMG/slide3.jpg);
+}
+
+.slide4 {
+  background-image: url(../IMG/slide4.jpg);
+  background-position: top;
+}
+
+.slide5 {
+  background-image: url(../IMG/slide5.jpg);
+  background-position: bottom;
+}
+
+.slide6 {
+  background-image: url(../IMG/slide6.jpg);
+  background-position: top;
+}
+
+
+.swiper-slide .inner {
+  width: 1200px;
+  height: 750px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -600px;
+}
+
+.swiper-slide .inner .inner-txt {
+  font-size: 36px;
+  height: 152px;
+  position: absolute;
+  top: 50%;
+  margin-top: -76px;
+  left: 0;
+}
+
+.swiper-slide .inner .inner-txt p {
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.8);
+}
+
+.swiper-slide .inner .inner-txt p:first-child {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.swiper-slide .inner .inner-txt p:last-child {
+  font-size: 16px;
+}
+
+.swiper-button-next {
+  width: 100px;
+  height: 150px;
+  background: url(../IMG/ar-next.png) no-repeat;
+  background-position: center;
+  margin-top: -55px;
+  right: 150px;
+}
+
+.swiper-button-prev {
+  width: 100px;
+  height: 150px;
+  background: url(../IMG/ar-prev.png) no-repeat;
+  background-position: center;
+  margin-top: -55px;
+  left: 150px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+
+/* 메인 디즈니 플러스 */
+
+.main-disney {
+  width: 1200px;
+  margin-bottom: 100px;
+}
+
+.con-title>p {
+  font-size: 30px;
+  font-weight: bold;
+  border-left: 3px solid #FFDC00;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
+
+.box_3 {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_3 .box {
+  margin: 0;
+  width: 380px;
+  height: 416px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  top: 0;
+}
+
+.box_3 .box:hover {
+  top: -10px;
+}
+
+.box_3 .box:hover .box-txt{
+  color: #FFDC00;
+}
+
+.box-bg {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100));
+  width: 100%;
+  height: 208px;
+  position: absolute;
+  bottom: 0;
+}
+
+.box-txt {
+  width: 100%;
+  height: 148px;
+  padding: 0 20px 20px 20px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.box-txt p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box-txt p:first-child {
+  margin-bottom: 15px;
+}
+
+.box-txt p:last-child {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.box1 {
+  background-image: url(../IMG/main-disney1.jpg);
+}
+
+.box2 {
+  background-image: url(../IMG/main-disney2.jpg);
+}
+
+.box3 {
+  background-image: url(../IMG/main-disney3.jpg);
+}
+
+.box4 {
+  background-image: url(../IMG/main-store1.jpg);
+}
+
+.box5 {
+  background-image: url(../IMG/main-store2.jpg);
+}
+
+.box6 {
+  background-image: url(../IMG/main-store3.jpg);
+}
+
+.main-magazine {
+  width: 1200px;
+  margin-bottom: 100px;
+}
+
+.main-magazine .box {
+  width: 1200px;
+  height: 300px;
+  margin: 0;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background-color: #fff;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.3s;
+}
+
+.main-magazine .box:hover {
+  top: -20px;
+}
+
+.main-magazine .box:hover .box-txt{
+  color: #FFDC00;
+}
+
+.main-magazine .box-bg {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100));
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-magazine .box-txt {
+  width: 100%;
+  height: 120px;
+  padding: 0 20px 20px 20px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+}
+
+.main-magazine .box7 {
+  background-image: url(../IMG/main-magazine1.jpg);
+  background-position: top;
+}
+
+.main-magazine .box8 {
+  background-image: url(../IMG/main-magazine2.jpg);
+  background-position: bottom;
+}
+
+.main-magazine .box9 {
+  background-image: url(../IMG/main-magazine3.jpg);
+  background-position: 0 -250px;
+}
+
+.main-magazine .box10 {
+  background-image: url(../IMG/main-magazine4.jpg);
+  background-position: top;
+}
+
+
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #262626;
+}
+
+.footer-con {
+  width: 1200px;
+  height: 100%;
+}
+
+.bt-menu {
+  padding: 30px 0;
+}
+
+.bt-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bt-left li {
+  padding: 0 20px;
+  border-right: 3px solid #FFDC00;
+}
+
+.bt-left li a {
+  transition: all 0.3s;
+}
+
+.bt-left li a:hover {
+  color: #FFDC00;
+}
+
+.bt-left li:first-child {
+  padding-left: 0;
+}
+
+.bt-left li:last-child {
+  border-right: none;
+}
+
+.bt-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.insta {
+  background-image: url(../IMG/icon_insta.png);
+}
+
+.you {
+  background-image: url(../IMG/icon_ytube.png);
+}
+
+.face {
+  background-image: url(../IMG/icon_face.png);
+}
+
+.contect > p {
+  margin-bottom: 30px;
+}
+
+.number {
+  width: 1000px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.number li {
+  margin: 0;
+}
+
+.copy {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* 탑버튼 */
+.top-btn {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50px;
+  height: 50px;
+  right: 200px;
+  bottom: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+.top-btn i {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}

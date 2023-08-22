@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네이버 웹툰</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/custom.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+    <link rel="shortcut icon" href="imges/favicon.png" type="image/x-icon">
+<link rel="icon" href="imges/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 최상단 버튼 -->
+      <div class="top-btn"><i class="fa-solid fa-chevron-up"></i></div>
+
+      <!-- 헤더 -->
+      <header>
+        <!-- 배경영역 -->
+        <div class="header-bg">
+          <!-- 로고 -->
+          <a href="#" class="logo"></a>
+
+          <!-- 상단메뉴 -->
+          <ul class="top-gnb clear">
+            <li><a href="#" class="fl">시리즈</a></li>
+            <li><a href="#" class="fl">웹소설</a></li>
+          </ul>
+
+          <!-- 로그인 영역 -->
+          <div class="login">
+            <a href="#">로그인</a>
+          </div>
+
+          <!-- 유틸메뉴 영역 -->
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- 메인메뉴 -->
+        <nav>
+          <ul class="main-gnb clear">
+            <li class="fl">
+              <a href="#"><p>홈</p></a>
+            </li>
+            <li class="fl">
+              <a href="webtoon.html"><i class="fl fa-solid fa-star"></i>
+                <p class="fl">웹툰</p></a>
+            </li>
+            <li class="fl">
+              <a href="#"><p>베스트도전</p></a>
+            </li>
+            <li class="fl">
+              <a href="#"><p>도전만화</p></a>
+            </li>
+            <li class="fl">
+              <a href="mypage.html"><i class="fl fa-solid fa-star"></i><p class="fl">마이페이지</p></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- 컨텐츠 -->
+      <div class="contents">
+        <!-- 요일웹툰 -->
+        <div class="today">
+          <!-- 타이틀 -->
+          <div class="today-title fl"><p>요일웹툰</p></div>
+          <ul class="today-gnb clear">
+            <li class="fl"><p>별점순</p></li>
+            <li class="fl"><p>인기순</p></li>
+          </ul>
+
+          <!-- 슬라이드 -->
+          <div class="slider-wrap">
+
+          <!-- 컨텐츠 -->
+          <ul class="today-con slider">
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img src="imges/똑 닮은 딸.jpg" alt="똑 닮은 딸"
+                  /></a>
+                </li>
+                <li><a href="#">똑 닮은 딸</a></li>
+                <li><a href="#">이담</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img src="imges/호랑신랑뎐.jpg" alt="호랑신랑뎐"
+                  /></a>
+                </li>
+                <li><a href="#">호랑신랑뎐</a></li>
+                <li><a href="#">고추참치</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img
+                      src="imges/서브 남주가 파업하면 생기는 일.jpg"
+                      alt="서브남주가 파업하면 생기는 일"
+                  /></a>
+                </li>
+                <li><a href="#">서부 남주가 파업하면 생기는 일</a></li>
+                <li><a href="#">그레빠인간 / 해그늘 / 숙임</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img
+                      src="imges/미니어처 생활백서.jpg"
+                      alt="미니어처 생활백서"
+                  /></a>
+                </li>
+                <li><a href="#">미니어처 생활백서</a></li>
+                <li><a href="#">엘렌 심</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img src="imges/앵무살수.jpg" alt=""
+                  /></a>
+                </li>
+                <li><a href="#">앵무살수</a></li>
+                <li><a href="#">김성진</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="today-con con slider">
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img src="imges/퀘스트지상주의.jpg" alt="퀘스트지상주의"
+                  /></a>
+                </li>
+                <li><a href="#">퀘스트지상주의</a></li>
+                <li><a href="#">박태준 만화회사</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img src="imges/뷰티풀 군바리.jpg" alt="뷰티풀 군바리"
+                  /></a>
+                </li>
+                <li><a href="#">뷰티풀 군바리</a></li>
+                <li><a href="#">설이 / 윤성원</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img
+                      src="imges/신의 탑.jpg"
+                      alt="신의 탑"
+                  /></a>
+                </li>
+                <li><a href="#">신의 탑</a></li>
+                <li><a href="#">SIU</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img
+                      src="imges/장씨세가 호위무사.jpg"
+                      alt="장씨세가 호위무사"
+                  /></a>
+                </li>
+                <li><a href="#">장씨세가 호위무사</a></li>
+                <li><a href="#">김인호 / 조형근</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="webtoon.html"
+                    ><img src="imges/윈드브레이커.jpg" alt="윈드브레이커"
+                  /></a>
+                </li>
+                <li><a href="#">윈드브레이커</a></li>
+                <li><a href="#">조용석</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+          <ul class="today-con con slider">
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="#"
+                    ><img src="imges/신화급 귀속 아이템을 손에 넣었다.jpg" alt="신화급 귀속 아이템을 손에 넣었다"
+                  /></a>
+                </li>
+                <li><a href="#">신화급 귀속 아이템을 손에 넣었다</a></li>
+                <li><a href="#">정선율 / 헤스</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="#"
+                    ><img src="imges/팔이피플.jpg" alt="팔이피플"
+                  /></a>
+                </li>
+                <li><a href="#">팔이피플</a></li>
+                <li><a href="#">매미 / 희세</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="#"
+                    ><img
+                      src="imges/소녀의 세계.jpg"
+                      alt="소녀의 세계"
+                  /></a>
+                </li>
+                <li><a href="#">소녀의 세계</a></li>
+                <li><a href="#">모랑지</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+                <li>
+                  <a class="today-img" href="#"
+                    ><img
+                      src="imges/별난식당.jpg"
+                      alt="별난식당"
+                  /></a>
+                </li>
+                <li><a href="#">별난식당</a></li>
+                <li><a href="#">HO9</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="today-sub">
+               
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+          <!-- 슬라이드버튼 -->
+          <div class="slide-btn">
+            <i class="today-btn-left fa-solid fa-chevron-left"></i>
+            <i class="today-btn-right fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+
+
+
+        <!-- 검색창 -->
+        <div class="search">
+          <input class="today-search" type="search" placeholder="오늘 내가 볼 웹툰은?">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="hash">
+          <a href="#" class="tag">#로맨스</a>
+          <a href="#" class="tag">#스릴러</a>
+          <a href="#" class="tag">#코미디</a>
+          <a href="#" class="tag">#판타지</a>
+          <a href="#" class="tag">#드라마</a>
+          <a href="#" class="tag">#스포츠</a>
+          <a href="#" class="tag">#액션</a>
+          <a href="#" class="tag">#일상</a>
+          <a href="#" class="tag">#무협/사극</a>
+          <a href="#" class="tag">#감성</a>
+        </div>
+
+
+        <!-- 가로 광고배너 -->
+        <div class="long-banner"><a href="#"></a></div>
+      
+
+
+      <!-- 매일+만화 -->
+      <div class="daily">
+        <!-- 타이틀 -->
+        <div class="daily-title fl"><p>따끈따끈한 업데이트 매일+</p></div>
+        <div class="daily-subtitle fl"><a href="#">매일+ 웹툰 전체 보러가기 <span><i class="fa-solid fa-greater-than"></i></span></a></div>
+
+
+        <!-- 슬라이드 -->
+        <div class="slider-wrap2">
+
+        <!-- 컨텐츠 -->
+        <ul class="daily-con slider">
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/리얼월드 _ 밸런스붕괴자.jpg" alt="리얼월드 ; 밸런스붕괴자"
+                /></a>
+              </li>
+              <li><a href="#">리얼월드 ; 밸런스붕괴자</a></li>
+              <li><a href="#">콩이 / 엘코</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/혼전계약서.jpg" alt="혼전계약서"
+                /></a>
+              </li>
+              <li><a href="#">혼전계약서</a></li>
+              <li><a href="#">시원 / 플아다</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/관심종자.jpg"
+                    alt="관심종자"
+                /></a>
+              </li>
+              <li><a href="#">관심종자</a></li>
+              <li><a href="#">웅</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/괴이.jpg"
+                    alt="괴이"
+                /></a>
+              </li>
+              <li><a href="#">괴이</a></li>
+              <li><a href="#">이정우 / 홍인근</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/보나파르트.jpg" alt="보나파르트"
+                /></a>
+              </li>
+              <li><a href="#">보나파르트</a></li>
+              <li><a href="#">몹시찰진우럭</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="daily-con slider con">
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/꿈에서 자유로.jpg" alt="꿈에서 자유로"
+                /></a>
+              </li>
+              <li><a href="#">꿈에서 자유로</a></li>
+              <li><a href="#">2L</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/마녀의 소녀.jpg" alt="마녀의 소녀"
+                /></a>
+              </li>
+              <li><a href="#">마녀의 소녀</a></li>
+              <li><a href="#">제피가루 / 수국</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/일진과의 전쟁.jpg"
+                    alt="일진과의 전쟁"
+                /></a>
+              </li>
+              <li><a href="#">일진과의 전쟁</a></li>
+              <li><a href="#">표</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/네가 있고, 내가 없는.jpg"
+                    alt="네가 있고, 내가 없는"
+                /></a>
+              </li>
+              <li><a href="#">네가 있고, 내가 없는</a></li>
+              <li><a href="#">달피</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/버티면 10억.jpg" alt="버티면 10억"
+                /></a>
+              </li>
+              <li><a href="#">버티면 10억</a></li>
+              <li><a href="#">만화인간</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="daily-con slider con">
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/일진담당일진.jpg" alt="일진담당일진"
+                /></a>
+              </li>
+              <li><a href="#">일진담당일진</a></li>
+              <li><a href="#">GRIMZO</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/던전 탈출이 너무 힘들다.jpg" alt="던전 탈출이 너무 힘들다"
+                /></a>
+              </li>
+              <li><a href="#">던전 탈출이 너무 힘들다</a></li>
+              <li><a href="#">김자까 / 땡돌 / 핫식스</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/본능적인 그대.jpg"
+                    alt="본능적인 그대"
+                /></a>
+              </li>
+              <li><a href="#">본능적인 그대</a></li>
+              <li><a href="#">정해진 / 갱아 / 이달아</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/잠입! 재벌고.jpg"
+                    alt="잠입! 재벌고"
+                /></a>
+              </li>
+              <li><a href="#">잠입! 재벌고</a></li>
+              <li><a href="#">AJ</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/도망 여주의 옆집에 살고 있습니다.jpg" alt="도망 여주의 옆집에 살고 있습니다"
+                /></a>
+              </li>
+              <li><a href="#">도망 여주의 옆집에 살고 있습니다</a></li>
+              <li><a href="#">벨루하 / 김산군</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="daily-con slider con">
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/씨앗의 정원.jpg" alt="씨앗의 정원"
+                /></a>
+              </li>
+              <li><a href="#">씨앗의 정원</a></li>
+              <li><a href="#">백희</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/호랑이 새끼.jpg" alt="호랑이 새끼"
+                /></a>
+              </li>
+              <li><a href="#">호랑이 새끼</a></li>
+              <li><a href="#">552 / 악새 / 우유양</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/북부 대공 부인_ 추워서 못 하겠습니다.jpg"
+                    alt="북부 대공 부인, 추워서 못 하겠습니다"
+                /></a>
+              </li>
+              <li><a href="#">북부 대공 부인, 추워서 못 하겠습니다</a></li>
+              <li><a href="#">레몬수박, 이건 / 연초</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/악마는 없다.jpg"
+                    alt="악마는 없다"
+                /></a>
+              </li>
+              <li><a href="#">악마는 없다</a></li>
+              <li><a href="#">없는사람</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/휴재일기.jpg" alt="휴재일기"
+                /></a>
+              </li>
+              <li><a href="#">휴재일기</a></li>
+              <li><a href="#">자까</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="daily-con slider con">
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/성좌들이 내 제자.jpg" alt="성좌들이 내 제자"
+                /></a>
+              </li>
+              <li><a href="#">성좌들이 내 제자</a></li>
+              <li><a href="#">차지운 / 스튜디오 이너스 / 방구석김씨</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img src="imges/육식고.jpg" alt="육식고"
+                /></a>
+              </li>
+              <li><a href="#">육식고</a></li>
+              <li><a href="#">시반적광</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+              <li>
+                <a class="daily-img" href="#"
+                  ><img
+                    src="imges/은하!.jpg"
+                    alt="은하!"
+                /></a>
+              </li>
+              <li><a href="#">은하!</a></li>
+              <li><a href="#">그리폰 / 알타리</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+            </ul>
+          </li>
+          <li>
+            <ul class="daily-sub">
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <!-- 슬라이드버튼 -->
+        <div class="slide-btn">
+          <i class="daily-btn-left fa-solid fa-chevron-left"></i>
+          <i class="daily-btn-right fa-solid fa-chevron-right"></i>
+        </div>
+
+
+
+        <!-- 도전만화 -->
+        <div class="try-wrap clear">
+          <!-- 타이틀 -->
+          <div class="try-title clear">
+              <p class="fl">도전만화</p>
+              <div class="try-subtitle fr">
+                <a href="#">도전만화 전체 보러가기 <span><i class="fa-solid fa-greater-than"></i></span></a>
+              </div>
+            </div>
+
+
+
+            <!-- 컨텐츠 -->
+            <ul class="try clear">
+              <li>
+                <ul class="try-con clear">
+                  <li class="fl"><a class="box" href="#"><img src="imges/어이아이싸우자!띠부몬!.jpg" alt="어이아이싸우자!띠부몬!"></a></li>
+                <li><a href="#"><p>어이아이싸우자!띠부몬!</p></a></li>
+                <li><a href="#"><p>찐덕질연구소</p></a></li>
+                </ul>
+                <ul class="try-con clear">
+                  <li class="fl"><a class="box" href="#"><img src="imges/커넥티드 월드.jpg" alt="커넥티드 월드"></a></li>
+                <li><a href="#"><p>커넥티드 월드</p></a></li>
+                <li><a href="#"><p>담디담</p></a></li>
+                </ul>
+                <ul class="try-con clear">
+                  <li class="fl"><a class="box" href="#"><img src="imges/앨런의 100가지 자각몽.jpg" alt="앨런의 100가지 자각몽"></a></li>
+                <li><a href="#"><p>앨런의 100가지 자각몽</p></a></li>
+                <li><a href="#"><p>다애</p></a></li>
+                </ul>
+                <ul class="try-con clear">
+                  <li class="fl"><a class="box" href="#"><img src="imges/Don't stay.jpg" alt="Don't stay"></a></li>
+                <li><a href="#"><p>Don't stay</p></a></li>
+                <li><a href="#"><p>bbk8****</p></a></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="try-con clear">
+                  <li class="fl"><a class="box" href="#"><img src="imges/끄아악은 못말려!.jpg" alt="끄아악은 못말려!"></a></li>
+                  <li><a href="#"><p>끄아악은 못말려!</p></a></li>
+                  <li><a href="#"><p>끄아악</p></a></li>
+                </ul>
+                <ul class="try-con clear">
+                  <li class="fl"><a class="box" href="#"><img src="imges/매직X팔레트.jpg" alt="매직X팔레트"></a></li>
+                <li><a href="#"><p>매직X팔레트</p></a></li>
+                <li><a href="#"><p>김학준</p></a></li>
+                </ul>
+                <ul class="try-con clear">
+                  <li class="fl"><a class="box" href="#"><img src="imges/코드네임.jpg" alt="코드네임"></a></li>
+                <li><a href="#"><p>코드네임</p></a></li>
+                <li><a href="#"><p>아리</p></a></li>
+                </ul>
+                <ul class="try-con clear">
+                  <li class="fl"><a class="box" href="#"><img src="imges/아가야 이리온.jpg" alt="아가야 이리온"></a></li>
+                <li><a href="#"><p>아가야 이리온</p></a></li>
+                <li><a href="#"><p>정승현</p></a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+
+
+        <!-- 베스트도전만화 -->
+      <div class="best clear">
+        <!-- 타이틀 -->
+        <div class="best-title fl">
+          <p class="fl">베스트 도전만화</p>
+          <p class="fl">최고 인기작 best 4</p>
+        </div>
+        <div class="best-subtitle fr">
+          <a href="#">베스트 도전만화 전체 보러가기 <span><i class="fa-solid fa-greater-than"></i></span></a>
+        </div>
+
+        <!-- 컨텐츠 -->
+        <ul class="best-con">
+          <li>
+            <ul class="best-sub">
+              <li class="fl"><a class="best-img" href="#"><img src="imges/제제가 돌봐드려요.jpg" alt="제제가 돌봐드려요"></a></li>
+              <li><a href="#">제제가 돌봐드려요</a></li>
+              <li><a href="#">아델</a></li>
+              <li><p>꿈을 이루기 위해 매일 바쁘게 사는 '이나'. 하지만 고된 현실 탓에 이나의 하루하루는 쉽지 않다. "이제부턴 제제가 돌봐줄게요!" 어느 날, 애착 인형 '제제'가 갑자기 움직이고 말도 하며 집안일도 해준다?! 그렇게 제제가 인생에 끼어든 후 이나의 팍팍하던 매일이 조금씩 변화하기 시작한다! (매주 목요일 연재합니다.)</p></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="best-sub">
+              <li class="fl"><a class="best-img" href="#"><img src="imges/낯가리는 관종.jpg" alt="낯가리는 관종"></a></li>
+              <li><a href="#">낯가리는 관종</a></li>
+              <li><a href="#">시논</a></li>
+              <li><p>첫 인상은 내향적이며 낯가리는 듯...?하지만 알고보니 관심종자! 내향적이고 낯가리는 시논의 관종일기</p></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="best-sub">
+              <li class="fl"><a class="best-img" href="#"><img src="imges/결혼하고 싶지 않았는데 못하게 되었다.jpg" alt="결혼하고 싶지 않았는데 못하게 되었다."></a></li>
+              <li><a href="#">결혼하고 싶지 않았는데 못하게 되었다.</a></li>
+              <li><a href="#">정변</a></li>
+              <li><p>서른 후반의 예민희 씨는 오빠의 결혼으로 부모님께 결혼을 종용 당한다. 결혼에 관심이 없었던 민희 씨는 이제라도 결혼에 관심을 줘 볼까 하지만 이미 결혼은 못 하는 것임을 깨닫게 된다. 1년 안에 결혼을 하든, 말든 나가 살라고 말하는 부모님. 과연 민희 씨는 결혼을 안 하는 건가? 못하는 건가?</p></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="best-sub">
+              <li class="fl"><a class="best-img" href="#"><img src="imges/나는 곰인이다.jpg" alt="나는 곰인이다"></a></li>
+              <li><a href="#">나는 곰인이다</a></li>
+              <li><a href="#">Gon3</a></li>
+              <li><p>한국에서 태어나 일본으로 건너간 유년 시절... 그리고 한국과 일본을 수차례 오갔다 일본인도 아닌 재일교포도 아닌 그렇다고 한국에서도 '일본'의 꼬리표가 붙어다니던 주인공 '곰인' 왜 주인공은 '곰인'이 됐을까? 회사 사표를 내고 인스타툰 작가를 하고 있는 작가 Gon3(곤상)의 자전적 이야기</p></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- 광고영역 -->
+      <div class="banner-wrap">
+        <a href="#" class="banner1"></a>
+        <a href="#" class="banner2"></a>
+        <a href="#" class="banner3"></a>
+      </div>
+
+
+
+      <!-- 공지사항 & 어플안내 -->
+      <div class="bt-wrap">
+        <!-- 공지사항 -->
+        <div class="notice-wrap">
+          <!-- 상단 타이틀 -->
+          <ul class="notice-title clear">
+            <li class="fl"><p>공지사항</p></li>
+            <li class="fr"><a href="#">공지사항 전체보기<span><i class="fa-solid fa-greater-than"></i></span></a></li>
+          </ul>
+
+          <!-- 공지사항 내용 -->
+          <ul class="notice-con">
+            <li><a href="#">2023 네이버웹툰 PC서비스 개편 안내</a></li>
+            <li><a href="#">네이버웹툰의 창작자 공간 WEBTOON CREATOR'S 오픈</a></li>
+            <li><a href="#">(new) 웹소설 원작 웹툰을 위한 각색/작화 작가를 모십니다!</a></li>
+            <li><a href="#">베스트도전, 도전만화 관련 서비스 개선 사항 안내</a></li>
+            <li><a href="#">네이버웹툰 안드로이드앱 쿠키 가격 변경 일정 안내</a></li>
+            <li><a href="#">포텐업이 새롭게 다시 태어납니다</a></li>
+            <li><a href="#">[공지] 일부 은행 및 카드사 점검으로 인한 네이버페이 결제 일시 중단 안내 (2/18 - 2/19)</a></li>
+
+
+          </ul>
+        </div>
+
+        <!-- 어플안내 -->
+        <div class="guide-wrap">
+          <p>네이버웹툰 앱 설치 안내</p>
+          <p>쿠키오븐의 <span>무료쿠키</span>로 미리보기 회차를 열람하고
+            <br>
+            매일 지급되는 <span>무료대여권</span>으로 작품을 열람해 보세요!
+            </p>
+            <div class="guide">
+              <div class="qr"></div>
+              <div class="store-btn">
+                <a href="#"><i class="fa-brands fa-google-play"></i>Google Play에서 보기</a>
+                <a href="#"><i class="fa-brands fa-apple"></i>App Store에서 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- 푸터 -->
+      <footer>
+        <!-- 하단 메뉴 -->
+        <ul class="bt-gnb clear">
+          <li class="fl"><a href="#">웹툰</a></li>
+          <li class="fl"><a href="#">웹소설</a></li>
+          <li class="fl"><a href="#">시리즈</a></li>
+          <li class="fl"><a href="#">시리즈온</a></li>
+          <li class="fr"><a href="#">웹툰 고객센터</a></li>
+        </ul>
+
+        <div class="terms-wrap clear">
+        <!-- 웹툰약관 -->
+        <ul class="web-terms fl">
+          <li class="fl"><a href="#">네이버웹툰 이용약관</a></li>
+          <li class="fl"><a href="https://m.comic.naver.com/store/comic/common/passJoinAgreeContract">전용상품권 이용약관</a></li>
+          <li class="fl"><a href="#">개인정보처리방침</a></li>
+          <li class="fl"><a href="#">청소년보호정책</a></li>
+          <li class="fl"><a href="#">웹툰 고객센터</a></li>
+          <li class="fl"><a href="#">광고/사업문의</a></li>
+          <li><a href="#">&copy; NAVER WEBTOON Limited.</a></li>
+        </ul>
+
+        <!-- 네이버 약관 -->
+        <ul class="naver-terms fr">
+          <li class="fl"><a href="#">이용약관</a></li>
+          <li class="fl"><a href="#">개인정보처리방침</a></li>
+          <li class="fl"><a href="#">책임의 한계와 법적고지</a></li>
+          <li class="fl"><a href="#">고객센터</a></li>
+          <li class="fl"><a href="#">결제도용신고</a></li>
+          <li class="fl"><a href="#">저작권침해신고</a></li>
+          <li><a href="#">&copy; NAVER CORP.</a></li>
+        </ul>
+      </div>
+
+        <!-- 사업자 정보 -->
+        <ul class="business clear">
+          <li class="fl"><p>사업자등록번호 669-86-01888</p></li>
+          <li class="fl"><p>통신판매업 신고번호 2020-성남분당B-0719 <a href="#">(사업자정보확인)</a></p></li>
+          <li><p>대표이사 김준구</p></li>
+          <li class="fl"><p>호스팅사업자 네이버비즈니스 플랫폼</p></li>
+          <li><p>주소 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 11-12층 고객센터 1588-3820</p></li>
+          <li><p>이메일 <a href="#">ccnaver@naver.com</a></p></li>
+        </ul>
+
+        <p>이 사이트는 취업을 목적으로 포트폴리오 용으로 제작되었으며 회사와는 아무 상관이 없습니다. 사이트 제작에 사용된 이미지나 로고는 각 사이트에 저작권이 있습니다.</p>
+      </footer>
+    </div>
+  </body>
+</html>

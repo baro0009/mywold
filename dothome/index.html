@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>닷홈</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/custom.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- 전체영역 -->
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header>
+        <!-- 로고 + 메뉴 -->
+        <div class="main-bar w-wrap">
+          <a href="#" class="logo fl"></a>
+          <ul class="main-gnb fl">
+            <li class="menu-domain fl"><a href="#">도메인</a></li>
+            <li class="menu-host fl"><a href="#">웹호스팅</a></li>
+            <li class="menu-builder fl"><a href="#">닷홈빌더</a></li>
+            <li class="menu-idc fl"><a href="#">IDC</a></li>
+            <li class="menu-mail fl"><a href="#">웹메일</a></li>
+            <li class="menu-security fl"><a href="#">보안</a></li>
+          </ul>
+
+          <i class="fa-solid fa-bars fr mo-menu-open"></i>
+
+          <div class="spot-menu fr">
+            <div class="spot clear">
+              <li class="fl"><a href="#">로그인</a></li>
+              <li class="fl"><a href="#">회원가입</a></li>
+              <li class="fl"><a href="#">고객센터</a></li>
+              <li class="fl"><a href="#">마이닷홈</a></li>
+            </div>
+          </div>
+        </div>
+
+        <div class="mo-gnb">
+          <div class="mo-gnb-wrap">
+            <div class="mo-spot-wrap">
+              <div class="mo-spot clear">
+                <!-- 로그인 + 회원가입 -->
+                <ul>
+                  <li class="fl"><a href="#">로그인</a></li>
+                  <li class="fl"><a href="#">회원가입</a></li>
+                </ul>
+                <!-- 닫기버튼 -->
+                <i class="fa-solid fa-xmark fr mo-menu-close"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- 모바일 메뉴영역 -->
+          <ul class="mo-menu">
+            <li>
+              <a href="#"
+                ><span>도메인</span>
+
+                <i class="fa-solid fa-angle-down close fr"></i>
+              </a>
+              <ul class="mo-sub">
+                <li>
+                  <a href="#">도메인 검색<span>EVENT</span></a>
+                </li>
+                <li><a href="#">도메인 연장</a></li>
+                <li>
+                  <a href="#">도메인 기관이전<span>EVENT</span></a>
+                </li>
+                <li><a href="#">스마트스토어 도메인 연결</a></li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-gear"></i>내 도메인 관리</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-gear"></i>내 DNS 관리</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><span>웹호스팅</span>
+
+                <i class="fa-solid fa-angle-down close fr"></i>
+              </a>
+              <ul class="mo-sub">
+                <li>
+                  <a href="#">리눅스 웹호스팅<span>EVENT</span></a>
+                </li>
+                <li><a href="#">워드프레스 웹호스팅</a></li>
+                <li><a href="#">무제한 웹호스팅</a></li>
+                <li><a href="#">단독 웹호스팅</a></li>
+                <li>
+                  <a href="#">이미지 호스팅<span class="new">NEW</span></a>
+                </li>
+                <li><a href="#">무료 호스팅</a></li>
+                <li><a href="#">웹호스팅 비교하기</a></li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-gear"></i>내 웹호스팅 관리</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-gear"></i>내 무제한호스팅 관리</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-gear"></i>내 이미지호스팅 관리</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><span>닷홈빌더</span> <i class="fa-solid fa-angle-down close fr"></i
+              ></a>
+              <ul class="mo-sub">
+                <li>
+                  <a href="#">닷홈빌더 신청<span>EVENT</span></a>
+                </li>
+                <li>
+                  <a href="#">요금제<span>EVENT</span></a>
+                </li>
+                <li><a href="#">템플릿</a></li>
+                <li><a href="#">기능</a></li>
+                <li><a href="#">유지보수 서비스</a></li>
+                <li><a href="#">홈페이지 빌더 리뉴얼</a></li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-gear"></i>내 닷홈빌더 관리</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-gear"></i>내 유지보수 관리</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><span>IDC</span>
+
+                <i class="fa-solid fa-angle-down close fr"></i
+              ></a>
+              <ul class="mo-sub">
+                <li><a href="#">KT 클라우드</a></li>
+                <li><a href="#">임대형 서버호스팅</a></li>
+                <li><a href="#">구매형 서버호스팅</a></li>
+                <li><a href="#">코로케이션</a></li>
+                <li><a href="#">모니터링 서비스</a></li>
+                <li><a href="#">보안 서비스</a></li>
+                <li><a href="#">로드밸런싱 서비스</a></li>
+                <li><a href="#">백업 서비스</a></li>
+                <li><a href="#">소프트웨어 임대</a></li>
+                <li><a href="#">1:1 서버관리 서비스</a></li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-gear"></i>내 서버호스팅 관리</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><span>웹메일</span>
+
+                <i class="fa-solid fa-angle-down close fr"></i
+              ></a>
+              <ul class="mo-sub">
+                <li><a href="#">베이직 웹메일</a></li>
+                <li><a href="#">무제한 웹메일</a></li>
+                <li><a href="#">기업보안 웹메일</a></li>
+                <li><a href="#">웹메일 소개</a></li>
+                <li><a href="#">웹메일 데모체험</a></li>
+                <li><a href="#">웹메일 기능</a></li>
+                <li><a href="#">웹메일 사양비교</a></li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-gear"></i>내 웹메일 관리</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><span>보안</span>
+
+                <i class="fa-solid fa-angle-down close fr"></i
+              ></a>
+              <ul class="mo-sub">
+                <li>
+                  <a href="#">SSL 보안 인증서<span>EVENT</span></a>
+                </li>
+                <li><a href="#">SSL 보안 인증서 소개</a></li>
+                <li><a href="#">SSL 보안 인증서 사양비교</a></li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-gear"></i>내 SSL 보안인증서 관리</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>마이닷홈</span></a>
+            </li>
+            <li>
+              <a href="#"><span>고객센터</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 서브메뉴 영역 -->
+        <div class="sub-wrap">
+          <div class="container">
+            <div class="sub-con domain">
+              <div class="sub-gnb">
+                <ul>
+                  <li>
+                    <a href="#">도메인 검색<span>EVENT</span></a>
+                  </li>
+                  <li><a href="#">도메인 연장</a></li>
+                  <li>
+                    <a href="#">도메인 기관이전<span>EVENT</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li><a href="#">스마트스토어 도메인 연결</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 도메인 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-gear"></i>내 DNS 관리</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-con host">
+              <div class="sub-gnb">
+                <ul>
+                  <li>
+                    <a href="#">리눅스 웹호스팅<span>EVENT</span></a>
+                  </li>
+                  <li><a href="#">워드프레스 웹호스팅</a></li>
+                  <li><a href="#">무제한 웹호스팅</a></li>
+                  <li><a href="#">단독 웹호스팅</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#">이미지 호스팅<span class="new">NEW</span></a>
+                  </li>
+                  <li><a href="#">무료 호스팅</a></li>
+                  <li><a href="#">웹호스팅 비교하기</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 웹호스팅 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 무제한호스팅 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 이미지호스팅 관리</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-con builder">
+              <div class="sub-gnb">
+                <ul>
+                  <li>
+                    <a href="#">닷홈빌더 신청<span>EVENT</span></a>
+                  </li>
+                  <li>
+                    <a href="#">요금제<span>EVENT</span></a>
+                  </li>
+                  <li><a href="#">템플릿</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">기능</a></li>
+                  <li><a href="#">유지보수 서비스</a></li>
+                  <li><a href="#">홈페이지 빌더 리뉴얼</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 닷홈빌더 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 유지보수 관리</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-con idc">
+              <div class="sub-gnb">
+                <ul>
+                  <li><a href="#">KT 클라우드</a></li>
+                  <li><a href="#">임대형 서버호스팅</a></li>
+                  <li><a href="#">구매형 서버호스팅</a></li>
+                  <li><a href="#">코로케이션</a></li>
+                  <li><a href="#">모니터링 서비스</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">보안 서비스</a></li>
+                  <li><a href="#">로드밸런싱 서비스</a></li>
+                  <li><a href="#">백업 서비스</a></li>
+                  <li><a href="#">소프트웨어 임대</a></li>
+                  <li><a href="#">1:1 서버관리 서비스</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 서버호스팅 관리</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-con mail">
+              <div class="sub-gnb">
+                <ul>
+                  <li><a href="#">베이직 웹메일</a></li>
+                  <li><a href="#">무제한 웹메일</a></li>
+                  <li><a href="#">기업보안 웹메일</a></li>
+                  <li><a href="#">웹메일 소개</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">웹메일 데모체험</a></li>
+                  <li><a href="#">웹메일 기능</a></li>
+                  <li><a href="#">웹메일 사양비교</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 웹메일 관리</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-con security">
+              <div class="sub-gnb">
+                <ul>
+                  <li>
+                    <a href="#">SSL 보안 인증서<span>EVENT</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li><a href="#">SSL 보안 인증서 소개</a></li>
+                  <li><a href="#">SSL 보안 인증서 사양비교</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 SSL 보안인증서 관리</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 컨텐츠 -->
+      <div class="contents">
+        <!-- 상단 여유공간 -->
+        <div class="top-bg"></div>
+        <!-- 슬라이드 -->
+        <div class="slider-wrap">
+          <div class="slider-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <ul class="slider clear">
+            <li class="slider-item on item1">
+              <div class="slider-con">
+                <h1>닷홈 빌더 콘테스트 2023</h1>
+                <p>
+                  놀라운 우승 상금과 참가만 해도 빌더 이용권 증정! <br />
+                  이 모든 혜택을 놓치지 마세요.
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="slider-img slider1"></div>
+            </li>
+            <li class="slider-item item2">
+              <div class="slider-con">
+                <h1>닷홈 빌더 스타트 등장!</h1>
+                <p>
+                  홈페이지 제작, 닷홈 빌더 스타트 요금제로 <br />
+                  월 500원에 부담없이 시작하세요.
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="slider-img slider2"></div>
+            </li>
+            <li class="slider-item item3">
+              <div class="slider-con">
+                <h1>리눅스 웹호스팅 시작가 50% 할인</h1>
+                <p>
+                  월 이용료 반값 할인으로 더욱 부담없는 인기 웹호스팅입니다.
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="slider-img slider3"></div>
+            </li>
+            <li class="slider-item back item4">
+              <div class="slider-con">
+                <h1>도메인 신규 등록 25% 할인</h1>
+                <p>
+                  할인쿠폰으로 가격부담없이 신규 도메인을 신청해보세요! <br />
+                  (net/org/biz/info/pe.kr 제외)
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="slider-img slider4"></div>
+            </li>
+            <li class="slider-item go item5">
+              <div class="slider-con">
+                <h1>GlobalSign 인증서 1개월 추가 제공</h1>
+                <p>
+                  SSL보안인증서를 설치하여 웹사이트를 안전하게 보호하세요.
+                  <br />
+                  GlobalSign 인증서 신청 시 1개월을 추가 제공합니다.
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="slider-img slider5"></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 검색 -->
+        <div class="search clear">
+          <p class="fl">WWW.</p>
+          <input
+            class="fl"
+            type="text"
+            placeholder="등록하실 도메인을 입력해주세요."
+          />
+          <div class="search-btn fl">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <!-- 로그인 + 배너 -->
+        <div class="banner-wrap clear">
+          <div class="login-wrap fl">
+            <div class="login">
+              <input
+                class="id"
+                type="text"
+                placeholder="아이디를 입력하세요."
+              />
+              <input
+                class="pw"
+                type="text"
+                placeholder="비밀번호를 입력하세요."
+              />
+              <button class="logbt">로그인</button>
+              <button
+                class="naver"
+                onclick="window.open('https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com')"
+              >
+                네이버 아이디로 로그인
+              </button>
+              <div class="clear idsave">
+                <input type="checkbox" class="fl" />
+                <p class="save fl">아이디 저장</p>
+              </div>
+
+              <ul class="btspot clear">
+                <li class="fl"><a href="#"> 아이디 찾기</a></li>
+                <li class="fl"><a href="#"> 비밀번호 찾기</a></li>
+                <li class="fl"><a href="join.html"> 회원가입</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="banner fr">
+            <!-- 상품서비스 -->
+            <a href="#" class="find">
+              <p>
+                어떤 상품을 고를지 고민되시나요? <br />
+                나에게 맞는 서비스를 찾아보세요!
+              </p>
+            </a>
+
+            <!-- 문의사항 -->
+            <a href="#" class="help">
+              <div class="help-text">
+                <h3>문의사항이 있으신가요?</h3>
+                <p class="none">
+                  닷홈에서 제공하는 서비스에 대하여 궁금한 사항이나 도움이
+                  필요한 경우 전문 상담팀의 기술 지원을 제공해드리고 있습니다.
+                  <br />
+                  문의에 대한 답변은 고객센터 운영 시간 내 받아보실 수 있으며,
+                  긴급 장애의 경우 24시간 운영하고 있습니다.
+                </p>
+                <hr />
+                <p>
+                  일반 문의 : 09:30 ~ 17:30 (주말, 공휴일 제외) 장애 문의 :
+                  24시간 운영
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 홍보영역 -->
+        <div class="promotion">
+          <p class="promotion-title">웹사이트 운영은 닷홈에서</p>
+          <div class="icon-wrap">
+            <div class="promotion-icon">
+              <div class="icon icon1"></div>
+              <p>24시간 문의 대응</p>
+              <p>365일 24시간 서버 모니터링 및 장애 문의 대응</p>
+            </div>
+            <div class="promotion-icon">
+              <div class="icon icon2"></div>
+              <p>17년 경력의 노하우</p>
+              <p>다년간의 경험으로 안정적인 서버 운영</p>
+            </div>
+            <div class="promotion-icon">
+              <div class="icon icon3"></div>
+              <p>전문적인 관리</p>
+              <p>호스팅 연구소 전문 개발자의 꾸준한 기능 개선</p>
+            </div>
+            <div class="promotion-icon">
+              <div class="icon icon4"></div>
+              <p>국내 1위 무료 호스팅</p>
+              <p>웹호스팅, 웹메일 등 다양한 무료 콘텐츠 제공</p>
+            </div>
+            <div class="promotion-icon">
+              <div class="icon icon5"></div>
+              <p>빠르고 안정적인 기술력</p>
+              <p>
+                10Gigabit 망 및 3단계 백업 시스템으로 <br />
+                안정적인 호스팅 운영
+              </p>
+            </div>
+            <div class="promotion-icon">
+              <div class="icon icon6"></div>
+              <p>합리적인 가격</p>
+              <p>주요 도메인을 저렴한 가격에 등록 가능</p>
+            </div>
+            <div class="promotion-icon">
+              <div class="icon icon7"></div>
+              <p>상황별 맞춤 웹호스팅</p>
+              <p>
+                무제한 트래픽부터 단독 서버까지 <br />
+                다양한 웹호스팅 서비스
+              </p>
+            </div>
+            <div class="promotion-icon">
+              <div class="icon icon8"></div>
+              <p>쉽고 빠른 웹사이트 빌더</p>
+              <p>
+                닷홈빌더 반응형 웹사이트 테마 및 <br />
+                30일 무료체험 제공
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 공지사항 -->
+        <div class="notice-wrap clear">
+          <div class="notice-title fl clear">
+            <p>공지사항</p>
+            <a href="#" class="drop"
+              >전체 보러가기 <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <ul class="notice-con fr">
+            <li class="clear">
+              <a href="#">2023-03-25 윈도우 웹호스팅 서버 보안 업데이트 안내</a
+              ><span>2023.03.21</span>
+            </li>
+            <li class="clear">
+              <a href="#">닷홈 빌더 콘테스트 2023 개최</a
+              ><span>2023.03.13</span>
+            </li>
+            <li class="clear">
+              <a href="#">무제한 웹메일 시스템 점검 안내</a
+              ><span>2023.03.17</span>
+            </li>
+            <li class="clear">
+              <a href="#">채팅상담 종료 및 고객센터 통합 안내</a
+              ><span>2023.03.17</span>
+            </li>
+            <li class="clear">
+              <a href="#">2023-03-17 정기점검 안내</a><span> 2023.03.13</span>
+            </li>
+            <li class="clear">
+              <a href="#"> 닷홈 빌더 신규 프로모션 요금제 안내</a
+              ><span>2023.03.08</span>
+            </li>
+            <li class="clear">
+              <a href="#">2023-02-18 정기점검 안내</a><span>2023.02.13</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sit-map-wrap">
+          <div class="sit-map">
+            <ul class="map menu1">
+              <li><a href="#">도메인</a></li>
+              <li><a href="#">도메인 연장</a></li>
+              <li><a href="#">도메인 기관이전</a></li>
+              <li><a href="#">스마트스토어 도메인 연결</a></li>
+            </ul>
+            <ul class="map menu2">
+              <li><a href="#">웹호스팅</a></li>
+              <li><a href="#">리눅스 웹호스팅</a></li>
+              <li><a href="#">워드프레스 웹호스팅</a></li>
+              <li><a href="#">무제한 웹호스팅</a></li>
+              <li><a href="#">단독 웹호스팅</a></li>
+              <li><a href="#">이미지 호스팅</a></li>
+              <li><a href="#">무료 호스팅</a></li>
+              <li><a href="#">웹호스팅 비교하기</a></li>
+            </ul>
+            <ul class="map menu3">
+              <li><a href="#">닷홈빌더</a></li>
+              <li><a href="#">닷홈빌더 신청</a></li>
+              <li><a href="#">요금제</a></li>
+              <li><a href="#">템플릿</a></li>
+              <li><a href="#">기능</a></li>
+              <li><a href="#">유지보수 서비스</a></li>
+              <li><a href="#">홈페이지 빌더 리뉴얼</a></li>
+            </ul>
+            <ul class="map menu4">
+              <li><a href="#">IDC</a></li>
+              <li><a href="#">KT 클라우드</a></li>
+              <li><a href="#">임대형 서버호스팅</a></li>
+              <li><a href="#">구매형 서버호스팅</a></li>
+              <li><a href="#">코로케이션</a></li>
+              <li><a href="#">모니터링 서비스</a></li>
+              <li><a href="#">보안 서비스</a></li>
+              <li><a href="#">로드밸런싱 서비스</a></li>
+              <li><a href="#">1:1 서버관리 서비스</a></li>
+              <li><a href="#">소프트웨어 임대</a></li>
+            </ul>
+            <ul class="map menu5">
+              <li><a href="#">웹메일</a></li>
+              <li><a href="#">베이직 웹메일</a></li>
+              <li><a href="#">무제한 웹메일</a></li>
+              <li><a href="#">기업보안 웹메일</a></li>
+            </ul>
+            <ul class="map menu6">
+              <li><a href="#">보안</a></li>
+              <li><a href="#">SSL 보안 인증서</a></li>
+            </ul>
+            <ul class="map menu7">
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">서비스 메뉴얼</a></li>
+              <li><a href="#">자주 묻는 질문과 답변</a></li>
+              <li><a href="#">1:1 문의</a></li>
+              <li><a href="#">IDC 센터</a></li>
+            </ul>
+            <ul class="map menu8">
+              <li><a href="#">마이닷홈</a></li>
+              <li><a href="#">도메인 관리</a></li>
+              <li><a href="#">DNS 관리</a></li>
+              <li><a href="#">호스팅 관리</a></li>
+              <li><a href="#">이미지 호스팅 관리</a></li>
+              <li><a href="#">닷홈빌더 관리</a></li>
+              <li><a href="#">트래픽 관리</a></li>
+              <li><a href="#">웹메일 관리</a></li>
+              <li><a href="#">부가 관리</a></li>
+              <li><a href="#">만료 알림내역</a></li>
+              <li><a href="#">정기결제 관리</a></li>
+              <li><a href="#">결제내역 관리</a></li>
+              <li><a href="#">소유권 이전</a></li>
+              <li><a href="#">회원정보 관리</a></li>
+            </ul>
+          </div>
+          <div class="mo-sit-map">
+            <ul class="mo-sit-menu">
+              <li>
+                <p class="clear">
+                  <span>도메인</span>
+                  <i class="fa-solid fa-angle-down sit-close fr"></i>
+                </p>
+                <ul class="mo-sit-sub">
+                  <li>
+                    <a href="#">도메인 검색</a>
+                  </li>
+                  <li><a href="#">도메인 연장</a></li>
+                  <li>
+                    <a href="#">도메인 기관이전</a>
+                  </li>
+                  <li><a href="#">스마트스토어 도메인 연결</a></li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 도메인 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-gear"></i>내 DNS 관리</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="clear">
+                  <span>웹호스팅</span>
+
+                  <i class="fa-solid fa-angle-down sit-close fr"></i>
+                </p>
+                <ul class="mo-sit-sub">
+                  <li>
+                    <a href="#">리눅스 웹호스팅</a>
+                  </li>
+                  <li><a href="#">워드프레스 웹호스팅</a></li>
+                  <li><a href="#">무제한 웹호스팅</a></li>
+                  <li><a href="#">단독 웹호스팅</a></li>
+                  <li>
+                    <a href="#">이미지 호스팅</a>
+                  </li>
+                  <li><a href="#">무료 호스팅</a></li>
+                  <li><a href="#">웹호스팅 비교하기</a></li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 웹호스팅 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 무제한호스팅 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 이미지호스팅 관리</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="clear">
+                  <span>닷홈빌더</span>
+
+                  <i class="fa-solid fa-angle-down sit-close fr"></i>
+                </p>
+                <ul class="mo-sit-sub">
+                  <li>
+                    <a href="#">닷홈빌더 신청</a>
+                  </li>
+                  <li>
+                    <a href="#">요금제</a>
+                  </li>
+                  <li><a href="#">템플릿</a></li>
+                  <li><a href="#">기능</a></li>
+                  <li><a href="#">유지보수 서비스</a></li>
+                  <li><a href="#">홈페이지 빌더 리뉴얼</a></li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 닷홈빌더 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 유지보수 관리</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="clear">
+                  <span>IDC</span>
+
+                  <i class="fa-solid fa-angle-down sit-close fr"></i>
+                </p>
+                <ul class="mo-sit-sub">
+                  <li><a href="#">KT 클라우드</a></li>
+                  <li><a href="#">임대형 서버호스팅</a></li>
+                  <li><a href="#">구매형 서버호스팅</a></li>
+                  <li><a href="#">코로케이션</a></li>
+                  <li><a href="#">모니터링 서비스</a></li>
+                  <li><a href="#">보안 서비스</a></li>
+                  <li><a href="#">로드밸런싱 서비스</a></li>
+                  <li><a href="#">백업 서비스</a></li>
+                  <li><a href="#">소프트웨어 임대</a></li>
+                  <li><a href="#">1:1 서버관리 서비스</a></li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 서버호스팅 관리</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="clear">
+                  <span>웹메일</span>
+
+                  <i class="fa-solid fa-angle-down sit-close fr"></i>
+                </p>
+                <ul class="mo-sit-sub">
+                  <li><a href="#">베이직 웹메일</a></li>
+                  <li><a href="#">무제한 웹메일</a></li>
+                  <li><a href="#">기업보안 웹메일</a></li>
+                  <li><a href="#">웹메일 소개</a></li>
+                  <li><a href="#">웹메일 데모체험</a></li>
+                  <li><a href="#">웹메일 기능</a></li>
+                  <li><a href="#">웹메일 사양비교</a></li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 웹메일 관리</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="clear">
+                  <span>보안</span>
+
+                  <i class="fa-solid fa-angle-down sit-close fr"></i>
+                </p>
+                <ul class="mo-sit-sub">
+                  <li>
+                    <a href="#">SSL 보안 인증서</a>
+                  </li>
+                  <li><a href="#">SSL 보안 인증서 소개</a></li>
+                  <li><a href="#">SSL 보안 인증서 사양비교</a></li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-gear"></i>내 SSL 보안인증서 관리</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>마이닷홈</span></a>
+              </li>
+              <li>
+                <a href="#"><span>고객센터</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-chevron-up top"></i>
+      </div>
+
+      <!-- 푸터 -->
+      <footer>
+        <!-- 메뉴부분 -->
+        <div class="bt-gnb-wrap">
+          <div class="bt-gnb clear">
+            <!-- 바텀 메뉴 -->
+            <ul class="bt-gnb-con fl clear">
+              <li class="fl"><a href="#">회사 소개</a></li>
+              <li class="fl"><a href="#">이용약관</a></li>
+              <li class="fl"><a href="#">개인정보처리방침</a></li>
+              <li class="fl"><a href="#">이메일 무단수집 거부</a></li>
+              <li class="fl"><a href="#">이메일</a></li>
+            </ul>
+            <!-- sns -->
+            <div class="bt-sns clear">
+              <a href="#" class="facebook fl"></a>
+              <a href="#" class="blog fr"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 푸터 컨텐츠 -->
+        <div class="bt-contents clear">
+          <!-- 본사 내용 -->
+          <div class="company fl">
+            <p>본사</p>
+            <p>
+              애니시큐어 주식회사 | 대표자 목현수 | 성남시 분당구 장미로36
+              인터넷통신센터 5층 애니시큐어 주식회사
+            </p>
+            <p>
+              사업자등록번호 129-81-95578 | 통신판매신고번호 경기성남-2007-281
+            </p>
+            <p>
+              이 사이트는 취업을 목적으로 포트폴리오 용으로 제작되었으며 회사와는 아무 상관이 없습니다<br> 사이트 제작에 사용된 이미지나 로고는 각 사이트에 저작권이 있습니다.
+            </p>
+          </div>
+
+          <!-- 연구소 내용 -->
+          <div class="lab fr">
+            <p>연구소</p>
+            <p>경기도 성남시 분당구 장미로36 인터넷통신센터 5층</p>
+            <p>호스팅기술연구소</p>
+            <div class="lab-img">
+              <div class="lab-con lab-img1 fl"></div>
+              <div class="lab-con lab-img2 fl"></div>
+              <div class="lab-con lab-img3 fl"></div>
+              <div class="lab-con lab-img4 fl"></div>
+            </div>
+          </div>
+
+          <!-- 정가운데 로고 -->
+          <div class="bt-logo clear">
+            <div class="newlogo fl"></div>
+            <div class="white fl"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
